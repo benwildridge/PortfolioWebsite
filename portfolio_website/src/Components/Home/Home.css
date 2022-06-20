@@ -1,0 +1,29 @@
+/* .HomeContainer {
+    margin-left: 10px;
+} */
+
+
+body {
+  font-family: system-ui;
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  overflow: hidden;
+}
+
+.orbit {
+  --size: 12rem;
+  --speed: 120s;
+}
+.orbit .center-image {
+  width: 10rem;
+  position: relative;
+  z-index: 10;
+}
+.orbit .center-image img {
+  position: absolute;
+  transition: opacity 500ms;
+}
+.orbit .center-image img:not(:first-child):hover {
+  opacity: 0;
+}
